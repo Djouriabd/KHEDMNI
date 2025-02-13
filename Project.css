@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #7091E6; 
+}
+
+
+#navbar {
+    background-color: #ADBBDA; 
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#navbar img {
+    height: 50px; 
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.nav-links li a:hover {
+    background-color: #3D52A0;
+    border-radius: 5px;
+}
+
+
+.sign-in-btn {
+    margin-left: auto; 
+    font-weight: bold;
+    color: #4A3D7A;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #3D52A0;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #5C77C3;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px #3D52A0;
+}
+
+
+.dropdown-menu li {
+    padding: 8px 0;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-menu.show {
+    display: block;
+}
+
+
+.dropdown-menu a:hover {
+    background-color: #4A67A1;
+    border-radius: 5px;
+}
+
+
+#jobseekers-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#jobseekers-btn span {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu.show + #jobseekers-btn span {
+    transform: rotate(180deg);
+}
