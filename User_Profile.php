@@ -1,3 +1,21 @@
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $first_name = $_POST["first_name"];
+    $email = $_POST["email"];
+    $phone = $_POST["phone"];
+    $location = $_POST["location"];
+
+    $sql = "INSERT INTO client (name, phone_number, email, address)
+            VALUES ('$name', '$phone', '$email', '$location')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Registration successful!";
+    } else {
+        echo "Error while inserting data: " . $conn->error;
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -256,21 +274,3 @@
   <script src="project.js"></script>
 </body>
 </html>
-<?php 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $first_name = $_POST["first_name"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $location = $_POST["location"];
-
-    $sql = "INSERT INTO client (name, phone_number, email, address)
-            VALUES ('$name', '$phone', '$email', '$location')";
-
-    if ($conn->query($sql) === TRUE) {
-        echo "Registration successful!";
-    } else {
-        echo "Error while inserting data: " . $conn->error;
-    }
-}
-
-?>
