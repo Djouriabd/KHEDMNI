@@ -1,4 +1,5 @@
 <?php 
+include 'db.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $first_name = $_POST["first_name"];
     $email = $_POST["email"];
@@ -6,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $location = $_POST["location"];
 
     $sql = "INSERT INTO client (name, phone_number, email, address)
-            VALUES ('$name', '$phone', '$email', '$location')";
+            VALUES ('$first_name', '$phone', '$email', '$location')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Registration successful!";
