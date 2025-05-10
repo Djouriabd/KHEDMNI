@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Find Jobs</title>
+    <link rel="stylesheet" href="jobs.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="Untitled design.svg" type="image/png">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <img id="img" src="khedmni.svg" alt="logo">
+            <ul>
+                <li class="blue"><a href="update.html">Home</a></li>
+                <li class="blue"><a href="jobs.html">Find Jobs</a></li>
+                <li class="blue"><a href="employers.html">Employers</a></li>
+                <!--<li><a href="contact.html">Admin</a></li>     for admin brk ykhrjlo--> 
+                <li class="blue"><a href="about_us.html">About Us</a></li>
+            </ul>
+            <ul class="auth-links">
+                <li class="hna"><a href="log_in.html">Log in</a></li>
+                <li class="hna"><a href="sign_up.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="job-page">
+        <div class="hero">
+            <h1>Job Search</h1>
+            <p>Search for your desired job matching your skills</p>
+        </div>
+        <section class="search-bar">
+            <input type="text" placeholder="Job title or Keyword">
+            <select>
+            <option selected disabled>Choose The Wilaya</option>
+            <option>Adrar</option>
+            <option>Chlef</option>
+            <option>Laghouat</option>
+            <option>Oum El Bouaghi</option>
+            <option>Batna</option>
+            <option>Béjaïa</option>
+            <option>Biskra</option>
+            <option>Béchar</option>
+            <option>Blida</option>
+            <option>Bouira</option>
+            <option>Tamanrasset</option>
+            <option>Tébessa</option>
+            <option>Tlemcen</option>
+            <option>Tiaret</option>
+            <option>Tizi Ouzou</option>
+            <option>Algiers</option>
+            <option>Djelfa</option>
+            <option>Jijel</option>
+            <option>Sétif</option>
+            <option>Saïda</option>
+            <option>Skikda</option>
+            <option>Sidi Bel Abbès</option>
+            <option>Annaba</option>
+            <option>Guelma</option>
+            <option>Constantine</option>
+            <option>Médéa</option>
+            <option>Mostaganem</option>
+            <option>MSila</option>
+            <option>Mascara</option>
+            <option>Ouargla</option>
+            <option>Oran</option>
+            <option>El Bayadh</option>
+            <option>Illizi</option>
+            <option>Bordj Bou Arréridj</option>
+            <option>Boumerdès</option>
+            <option>El Tarf</option>
+            <option>Tindouf</option>
+            <option>Tissemsilt</option>
+            <option>El Oued</option>
+            <option>Khenchela</option>
+            <option>Souk Ahras</option>
+            <option>Tipaza</option>
+            <option>Mila</option>
+            <option>Aïn Defla</option>
+            <option>Naâma</option>
+            <option>Aïn Témouchent</option>
+            <option>Ghardaïa</option>
+            <option>Relizane</option>
+            <option>Timimoun</option>
+            <option>Bordj Badji Mokhtar</option>
+            <option>Ouled Djellal</option>
+            <option>Béni Abbès</option>
+            <option>In Salah</option>
+            <option>In Guezzam</option>
+            <option>Touggourt</option>
+            <option>Djanet</option>
+            <option>El M'Ghair</option>
+            <option>El Menia</option>
+            </select>
+            <button id="yy" type="submit">Search</button>
+        </section>
+
+        <section class="job-container">
+            <aside class="filter">
+                <h2>Filter by:</h2>
+                <label class="one" for="salary-range">Salary Range:</label><br>
+                <input type="text" placeholder="Min"><br>
+                <br><input type="text" placeholder="Max"><br><br>
+                <hr><br>
+                <label class="one" for="job-type">Job Type:</label>
+                <br><input type="checkbox" name="all" id="all" value="all">
+                <label for="all">All</label><br><br>             
+                <input type="checkbox" name="full-time" id="full-time" value="full-time">
+                <label for="full-time">full time</label><br><br>
+                <input type="checkbox" name="part-time" id="part-time" value="part-time">
+                <label for="part-time">part time</label><br><br>
+                <input type="checkbox" name="internship" id="internship" value="internship">
+                <label for="internship">internship</label><br><br>
+                <input type="checkbox" name="contract" id="contract" value="contract">
+                <label for="contract">contract</label><br><br>
+            <hr><br>
+                <label class="one" for="work-mode">Work Mode:</label>
+                <br><input type="checkbox" name="all" id="all" value="all">
+                <label for="all">All</label><br><br>             
+                <input type="checkbox" name="remote" id="remote" value="remote">
+                <label for="remote">Remote</label><br><br>
+                <input type="checkbox" name="hybrid" id="hybrid" value="hybrid">
+                <label for="hybrid">Hybrid</label><br><br>
+                <input type="checkbox" name="on-site" id="on-site" value="on-site">
+                <label for="on-site">On-Site</label><br><br>
+            <hr><br>
+                <label class="one" for="experience-level">Experience Level:</label>
+                    <br><input type="checkbox" name="all" id="all" value="all">
+                    <label for="all">All</label><br><br>             
+                    <input type="checkbox" name="junior" id="junior" value="junior">
+                    <label for="junior">junior</label><br><br>
+                    <input type="checkbox" name="mid-level" id="mid-level" value="mid-level">
+                    <label for="mid-level">mid level</label><br><br>
+                    <input type="checkbox" name="senior" id="senior" value="senior">
+                    <label for="senior">senior</label><br><br>
+            <hr><br>
+                <label class="one" for="job-funtions">Job Functions:</label>
+                    <br><input type="checkbox" name="all" id="all" value="all">
+                    <label for="all">All</label><br><br>             
+                    <input type="checkbox" name="it" id="it" value="it">
+                    <label for="it">IT</label><br><br>
+                    <input type="checkbox" name="marketing" id="marketing" value="marketing">
+                    <label for="marketing">Marketing</label><br><br>
+                    <input type="checkbox" name="finance" id="finance" value="finance">
+                    <label for="finance">Finance</label><br><br>
+            </aside>
+        </section>
+
+        <div class="jobs-list">
+            <div class="jobs-header">
+                <h2>All Jobs (2310)</h2>
+                <select class="sort-by">
+                    <option>Popular</option>
+                    <option>Latest</option>
+                </select>
+            </div>
+        <div class="job-card">
+            <div class="job-header">
+                <h3>Technical Support Specialist <span class="part-time">Part Time</span></h3>
+                <p>Salary: 20,000 DZ - 25,000 DZ</p>
+                <p><strong>Ooredoo Inc.</strong> - Dali Ibrahim, Algerie</p>
+            </div>
+            <div class="job-footer">
+                <span>5+ applicants</span>
+                <div>
+                    <button class="btn-outline">View details</button>
+                    <button class="btn-primary">Apply now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <h3>Senior Web Dev <span class="part-time">Contract</span></h3>
+                <p>Salary: 40,000 DZ - 45,000 DZ</p>
+                <p><strong>Djezzy Inc.</strong> - El Elma, Setif</p>
+            </div>
+            <div class="job-footer">
+                <span>1+ applicants</span>
+                <div>
+                    <button class="btn-outline">View details</button>
+                    <button class="btn-primary">Apply now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <h3>Engineering Computer Science <span class="part-time">Full Time</span></h3>
+                <p>Salary: 30,000 DZ - 35,000 DZ</p>
+                <p><strong>Mobilis Inc.</strong> - Cherchal, Tipaza</p>
+            </div>
+            <div class="job-footer">
+                <span>10+ applicants</span>
+                <div>
+                    <button class="btn-outline">View details</button>
+                    <button class="btn-primary">Apply now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <h3>Teacher <span class="part-time">Part Time</span></h3>
+                <p>Salary: 50,000 DZ - 55,000 DZ</p>
+                <p><strong>Fluenty Inc.</strong> - Amizour, Béjaïa</p>
+            </div>
+            <div class="job-footer">
+                <span>15+ applicants</span>
+                <div>
+                    <button class="btn-outline">View details</button>
+                    <button class="btn-primary">Apply now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <h3>Taxi Driver <span class="part-time">Contract</span></h3>
+                <p>Salary: 20,000 DZ - 25,000 DZ</p>
+                <p><strong>ANPT Inc.</strong> - El Houamed, Biskra</p>
+            </div>
+            <div class="job-footer">
+                <span>3+ applicants</span>
+                <div>
+                    <button class="btn-outline">View details</button>
+                    <button class="btn-primary">Apply now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <h3>Senior UI/UX Designer <span class="part-time">Full Time</span></h3>
+                <p>Salary: 40,000 DZ - 45,000 DZ</p>
+                <p><strong>Soummam</strong> - Oran </p>
+            </div>
+            <div class="job-footer">
+                <span>9+ applicants</span>
+                <div>
+                    <button class="btn-outline">View details</button>
+                    <button class="btn-primary">Apply now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>About</h3>
+                        <p>Our Story</p>
+                        <p>Careers</p>
+                        <p>Our Team</p>
+                        <p>Resources</p>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <p>FAQ</p>
+                        <p>Contact Us</p>
+                        <p>Help Center</p>
+                        <p>Terms of Service</p>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Find Us</h3>
+                        <p>Events</p>
+                        <p>Locations</p>
+                        <p>Newsletter</p>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Our Social</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="#"><i class="fab fa-facebook"></i> Facebook</>
+                            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            <p>Bringing you closer to career opportunities. Start today.</p>
+    </footer>  
+</main>
+</body>
+</html>
