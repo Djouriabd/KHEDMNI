@@ -1,4 +1,4 @@
-CREATE TABLE Client (
+CREATE TABLE Client_c (
     idclient INT AUTO_INCREMENT PRIMARY KEY,
     last_name VARCHAR(100),
     first_name VARCHAR(100),
@@ -6,9 +6,10 @@ CREATE TABLE Client (
     address VARCHAR(255),
     phone VARCHAR(20),
     email VARCHAR(100),
-    cv_file VARCHAR(255)
+    cv_file VARCHAR(255),
+    location VARCHAR(10)
 );
-ALTER TABLE client ADD location VARCHAR(10) ;
+
 
 
 
@@ -87,13 +88,11 @@ CREATE TABLE Internship_Announcement (
     FOREIGN KEY (idannonce) REFERENCES Announcement(idannonce),
     FOREIGN KEY (idfield) REFERENCES Internship(idstage)
 );
-INSERT INTO Internship_Announcement (idannonce, idfield, start_date, end_date)
-VALUES
-(1, 1, '2025-06-01', '2026-06-01'),
-(2, 2, '2025-07-01', '2025-11-30'),
-(3, 3, '2025-06-15', '2026-01-01'),
-(4, 4, '2025-08-01', '2025-12-30'),
-(5, 5, '2025-09-01', '2026-02-23');
+INSERT INTO Internship_Announcement (idannonce, idfield, start_date, end_date) VALUES (1, 1, '2025-06-01', '2026-06-01');
+INSERT INTO Internship_Announcement (idannonce, idfield, start_date, end_date) VALUES (2, 2, '2025-07-01', '2025-11-30');
+INSERT INTO Internship_Announcement (idannonce, idfield, start_date, end_date) VALUES (3, 3, '2025-06-15', '2026-01-01');
+INSERT INTO Internship_Announcement (idannonce, idfield, start_date, end_date) VALUES (4, 4, '2025-08-01', '2025-12-30');
+INSERT INTO Internship_Announcement (idannonce, idfield, start_date, end_date) VALUES (5, 5, '2025-09-01', '2026-02-23');
 
 
 
@@ -101,27 +100,24 @@ VALUES
 
 
 
-CREATE TABLE Position (
+CREATE TABLE Position_c (
     idposte INT AUTO_INCREMENT PRIMARY KEY,
     designation VARCHAR(100)
 );
 
-ALTER TABLE Position ADD COLUMN idcompany INT,
+ALTER TABLE Position_c ADD COLUMN idcompany INT,
 ADD FOREIGN KEY (idcompany) REFERENCES Company(idcompany);
 
-
-INSERT INTO Position (designation) VALUES ('Software Developer', 1);
-INSERT INTO Position (designation)
-VALUES
-('Network Engineer', 1),
-('Marketing Specialist', 2),    
-('Customer Service Rep', 3),    
-('HR Assistant', 4),            
-('Data Analyst', 5),            
-('Mechanical Engineer', 6),     
-('Electrical Technician', 7),   
-('Graphic Designer', 8),        
-('Project Manager', 9);       
+INSERT INTO Position_c (designation, idcompany) VALUES ('Software Developer', 1);
+INSERT INTO Position_c (designation, idcompany) VALUES ('Network Engineer', 1);
+INSERT INTO Position_c (designation, idcompany) VALUES ('Marketing Specialist', 2);    
+INSERT INTO Position_c (designation, idcompany) VALUES ('Customer Service Rep', 3);    
+INSERT INTO Position_c (designation, idcompany) VALUES ('HR Assistant', 4);            
+INSERT INTO Position_c (designation, idcompany) VALUES ('Data Analyst', 5);            
+INSERT INTO Position_c (designation, idcompany) VALUES ('Mechanical Engineer', 6);     
+INSERT INTO Position_c (designation, idcompany) VALUES ('Electrical Technician', 7);   
+INSERT INTO Position_c (designation, idcompany) VALUES ('Graphic Designer', 8);        
+INSERT INTO Position_c (designation, idcompany) VALUES ('Project Manager', 9);
 
 SELECT Position.idposte, Position.designation,Company.name AS company_name
 FROM Position
@@ -148,3 +144,7 @@ GROUP BY field;
 
 SELECT COUNT(*) AS total_clients
 FROM Client;
+
+
+
+

@@ -68,10 +68,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
       </div>
       <div class="info-form">
-        <div><label>Name</label><input type="text" value="Your name"></div>
-        <div><label>Email</label><input type="email" value="yourname@gmail.com"></div>
-        <div><label>Phone</label><input type="tel" placeholder="Add number"></div>
-        <div><label>Location</label><input type="text" list="countries" placeholder="Enter country code"></div>
+    <div><label>First Name</label><input type="text" name="first_name" placeholder="Enter first name"></div>
+    <div><label>Last Name</label><input type="text" name="last_name" placeholder="Enter last name"></div>
+    <div><label>Email</label><input type="email" name="email" placeholder="Enter email"></div>
+    <div><label>Phone</label><input type="tel" name="phone" placeholder="Add number"></div>
+    <div><label>Location</label><input type="text" name="location" list="countries" placeholder="Enter country code"></div>
 <datalist id="countries">
   <option value="AFG">Afghanistan</option>
   <option value="ALB">Albania</option>
