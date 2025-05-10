@@ -1,0 +1,357 @@
+nav{
+    color: #3D52A0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: 15px;
+    font-weight: bolder;
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: 1000;
+}
+body{
+    background-color: #fcf6f6;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: border;
+    font-size: 16px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin-right: 50px;
+}
+nav ul li a{
+    color: hsl(234, 41%, 30%);
+    text-decoration: none;
+}
+.blue a:hover{
+    border-radius: 15px;
+    background-color: hsl(229, 69%, 79%, 30%);
+    color: #3D52A0;
+    font-weight: bold;
+    padding: 15px 15px;
+}
+
+nav ul li a.auth-links{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#img{
+    max-width: 3%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+#hna{  /*hna button ta3 log in lazm nsgmo*/
+    color: #FFF2F2;
+    border-radius: 0%;
+    background-color: #2D336B;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 30px;
+    padding: 7px 15px;
+}
+
+.who-we-are{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.who-we-are h1{
+    font-size: 2.5em;
+    text-align: left;
+    padding-left: 10px;
+    color: #2D336B;
+}
+
+.who-we-are p{
+    max-width: 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-left: -200px;
+    padding-top: 110px;
+}
+
+.who-we-are img{
+    max-width: 30%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    margin-top: -90px;
+    margin-left: 70px;
+}
+
+.who-we-are img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.our-mission{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.our-mission h1{
+    margin-top: 100px;
+    font-size: 2.5em;
+    text-align: left;
+    padding-left: 10px;
+    color: #2D336B;
+}
+
+.our-mission p{
+    max-width: 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-left: -200px;
+    margin-top: 80px;
+    padding-top: 110px;
+}
+
+.our-mission img{
+    max-width: 40%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    margin-top: -90px;
+    margin-left: -70px;
+    float: left;
+}
+
+.our-mission img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.offer{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 0 auto;
+    padding-left: 20px;
+    margin-top: 200px;
+}
+
+.offer h1{
+    font-size: 2.5em;
+    text-align: left;
+    color: #2D336B;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+#one{
+    max-width: 30%;
+    height: auto;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-left: -280px;
+    margin-right: 250px;
+}
+
+#two{
+    max-width: 30%;
+    height: auto;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-left: -70px;
+    margin-right: 250px;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 0 auto;
+    padding-left: 20px;
+    margin-top: 200px;
+}
+
+.contact-us h1{
+    font-size: 2.5em;
+    text-align: left;
+    padding-left: 100px;
+    color: #2D336B;
+}
+
+.contact-us p{
+    max-width: 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-left: -200px;
+    padding-top: 110px;
+}
+
+.form{
+    justify-content: center;
+    align-items: right;
+    margin: 0 auto;
+    padding-left: 20px;
+    margin-top: 200px;
+    border: #2D336B solid 1px;
+    border-radius: 10px;
+    padding: 80px;
+    margin-top: -1px;
+    margin-bottom: 200px;
+}
+
+.form:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.form label{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features, .company-list {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 80%;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+.footer {
+    background-color: #2D336B;
+    color: #fcf6f6;
+    padding: 40px 0;
+    text-align: center;
+    max-width: 100%;
+}
+
+.footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .social-links a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .social-links i {
+    font-size: 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-links i {
+    font-size: 20px;
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+
