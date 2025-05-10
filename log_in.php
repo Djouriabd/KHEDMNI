@@ -1,4 +1,25 @@
-<?php include 'db.php'; ?>
+<?php 
+include 'db.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    $sql = "SELECT * FROM client WHERE email='$username' OR first_name='$username'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        if ($user["password"] == $password) {
+            echo " Logged in successfully!";
+        } else {
+            echo " Wrong password.";
+        }
+    } else {
+        echo " User not found.";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +41,11 @@
         </nav>
         <main class="login">
             <h1>Welcome Back</h1>
-            <form class="f" action="?">
+            <form class="f" action="about_us.html" method="POST">
                 <p>Enter your Email Address or User Name</p>
-                <br><input class="block" type="text" placeholder="Email/User name" required size="20" id="fname"><br>
+                <br><input type="text" name="username" placeholder="Email/User name" required><br>
                 <br><p>Enter your Your Password</p>
-                <br><input class="block" type="text" placeholder="Password" required size="20" id="fname"><br>
+                <br><input type="password" name="password" placeholder="Password" required><br>
                 <br><label for="fname" id="idk"><a href="password.html">forget your password?</a></label><br>
                 <button class="log_in" type="submit" id="btn">Log in</button>
                 <p id="hna">You don't have an account yet? <a href="sign_up.html">sign up</a></p>
