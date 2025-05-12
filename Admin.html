@@ -7,13 +7,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet" />
         <link href="Admin.css" rel="stylesheet">
+        <link rel="icon" href="Untitled design.svg" type="image/png">
     </head>
     <body>
+        <header>
+            <nav>
+            <img id="img" src="khedmni.svg" alt="logo">
+            <ul>
+                <li class="blue"><a href="update.html">Home</a></li>
+                <li class="blue"><a href="jobs.html">Find Jobs</a></li>
+                <li class="blue" ><a href="employers.html">Employers</a></li>
+                <!--<li><a href="contact.html">Admin</a></li>     for admin brk ykhrjlo--> 
+                <li class="blue" ><a href="about_us.html">About Us</a></li>
+            </ul>
+            <div class="profile">
+                    <div class="info">
+                        <p><b>Ooredoo</b></p>
+                        <p>Admin</p>
+                        <small class="text-muted"></small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images (1).png" alt="">
+                    </div>
+                </div>
+        </nav>
+        </header>
     <div class="container">
         <aside>
         <div class="top">
             <div class="log">
-                <h2>Kh <span class="danger">admni</span></h2>
+                <h2>Kh <span class="blue">edmni</span></h2>
             </div>
             <div class="close" id="close_btn">
                 <span class="material-symbols-outlined"> close</span>
@@ -21,13 +44,13 @@
             </div>
         </div>
             <div class="sidebar">
-                <a href="#">
+                <a href="#" class="active">
                 <span class="material-symbols-outlined"> grid_view </span>
                 <h3>Dashbord</h3>
                 </a>
-                <a href="#" class="active"> 
+                <a href="#"> 
                 <span class="material-symbols-outlined"> person </span>
-                <h3>custumers</h3> 
+                <h3>Clients</h3> 
                 </a>
                 <a href="#"> 
                 <span class="material-symbols-sharp">insights </span> 
@@ -36,13 +59,13 @@
                 <a href="#"> 
                 <span class="material-symbols-sharp">mail_outline </span> 
                 <h3>Messages</h3> 
-                <span class="msg_count">14</span> 
+                <span class="msg_count">+99</span> 
                 </a> 
                 <a href="#"> 
-                <span class="material-symbols-sharp">receipt_long </span> 
-                <h3>Products</h3> 
+                <!--<span class="material-symbols-sharp">receipt_long </span> 
+                <h3>idk</h3> 
                 </a> 
-                <a href="#"> 
+                <a href="#"> -->
                 <span class="material-symbols-sharp">report_gmailerrorred </span> 
                 <h3>Reports</h3> 
                 </a>
@@ -52,9 +75,9 @@
                 </a> 
                 <a href="#"> 
                 <span class="material-symbols-sharp">add </span> 
-                <h3>Add Product</h3> 
+                <h3>Add New Dashboard</h3> 
                 </a> 
-                <a href="#"> 
+                <a href="log_in.html"> 
                 <span class="material-symbols-sharp">logout </span> 
                 <h3>logout</h3> 
                 </a> 
@@ -72,8 +95,8 @@
                     <span class="material-symbols-sharp">trending_up</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Total Sales</h3>
-                            <h1>$30.50</h1>
+                            <h3>Total Views</h3>
+                            <h1>+5k</h1>
                         </div>
                         <div class="progress">
                             <svg>
@@ -86,11 +109,11 @@
                 </div>
 
                 <div class="expenses">
-                    <span class="material-symbols-sharp">local_mall</span>
+                    <span class="material-symbols-outlined">1k_plus</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Expenses</h3>
-                            <h1>$30.50</h1>
+                            <h3>Followers</h3>
+                            <h1>+1k</h1>
                         </div>
                         <div class="progress">
                             <svg>
@@ -103,11 +126,11 @@
                 </div>
 
                 <div class="income">
-                    <span class="material-symbols-sharp">stacked_line_chart</span>
+                    <span class="material-symbols-outlined">person_add</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Income</h3>
-                            <h1>$30.50</h1>
+                            <h3>Hiring Demand</h3>
+                            <h1>+300</h1>
                         </div>
                         <div class="progress">
                             <svg>
@@ -125,43 +148,75 @@
                 <table>
                     <thead>
                     <tr>
-                    <th>Product Name</th>
-                    <th>Product Number</th>
-                    <th>Payments</th>
-                    <th>Status</th>
+                    <th>Client Name</th>
+                    <th>Client Phone Number</th>
+                    <th>Email</th>
+                    <th>Situation</th>
                     </tr>
                     </thead>
                     <tbody>
 
                         <tr>
-                        <td>Mini USB</td>
-                        <td>456</td>
-                        <td>Due</td>
+                        <td>Samira Rachrache</td>
+                        <td>055...389</td>
+                        <td>samira...@gmail.com</td>
                         <td class="warring">Pending</td>
                         <td class="primary">Details</td>
                         </tr>
 
                         <tr>
-                        <td>Mini USB</td>
-                        <td>456</td>
-                        <td>Due</td>
+                        <td>Wannis Kheldoni</td>
+                        <td>076...145</td>
+                        <td>w98li...@gmail.com</td>
+                        <td class="accept">Accepted</td>
+                        <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                        <td>Aymen kibich</td>
+                        <td>066...012</td>
+                        <td>aymen...@gmail.com</td>
+                        <td class="decline">Declined</td>
+                        <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                        <td>Dayaa khir-Eddin</td>
+                        <td>055...271</td>
+                        <td>dayaa...@yahoo.com</td>
                         <td class="warring">Pending</td>
                         <td class="primary">Details</td>
                         </tr>
 
                         <tr>
-                        <td>Mini USB</td>
-                        <td>456</td>
-                        <td>Due</td>
-                        <td class="warring">Pending</td>
+                        <td>djouri Abdellaoui</td>
+                        <td>055...200</td>
+                        <td>rubya...@gmail.com</td>
+                        <td class="accept">Accepted</td>
                         <td class="primary">Details</td>
                         </tr>
 
                         <tr>
-                        <td>Mini USB</td>
-                        <td>456</td>
-                        <td>Due</td>
+                        <td>Meddah Baya</td>
+                        <td>055...150</td>
+                        <td>bayaa...@gmail.com</td>
+                        <td class="accept">Accepted</td>
+                        <td class="primary">Details</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Rabiai Chahinaz</td>
+                        <td>066...271</td>
+                        <td>melli...@gmail.com</td>
                         <td class="warring">Pending</td>
+                        <td class="primary">Details</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ali tourki</td>
+                        <td>075...271</td>
+                        <td>alilo...@yahoo.com</td>
+                        <td class="decline">Declined</td>
                         <td class="primary">Details</td>
                         </tr>
                     </tbody>
@@ -177,88 +232,77 @@
                     <span class="material-symbols-sharp active">light_mode</span>
                     <span class="material-symbols-sharp">dark_mode</span>
                 </div>
-                <div class="profile">
-                    <div class="info">
-                        <p><b>Babar</b></p>
-                        <p>Admin</p>
-                        <small class="text-muted"></small>
-                    </div>
-                    <div class="profile-photo">
-                        <img src="images/job-1.jpg" alt="">
-                    </div>
-                </div>
+                
             </div>
             <div class="recent_updates">
-                <h2>Recent Update</h2>
+                <h2>Recent Update</h2><br>
                 <div class="Updates">
                 <div class="Update">
                     <div class="profile-photo">
-                        <img src="" alt="">
+                        <img src="avatar.jpg" alt="">
                     </div>
                     <div class="message">
-                        <p><b>Babar</b>Recived his order</p>
+                        <p><b>Baya</b>  New follower</p>
                     </div>
                 </div>
-                <h2>Recent Update</h2>
                 <div class="Update">
                     <div class="profile-photo">
-                        <img src="" alt="">
+                        <img src="avatar.jpg" alt="">
                     </div>
                     <div class="message">
-                        <p><b>Babar</b>Recived his order</p>
+                        <p><b>Djouri</b>  Sent message request</p>
                     </div>
                 </div>
-                <h2>Recent Update</h2>
                 <div class="Update">
                     <div class="profile-photo">
-                        <img src="" alt="">
+                        <img src="avatar.jpg" alt="">
                     </div>
                     <div class="message">
-                        <p><b>Babar</b>Recived his order</p>
+                        <p><b>Arwa</b>  View your profile</p>
                     </div>
                 </div>
                 </div>
             </div>
             <div class="sales_analytics">
-                <h2>Sales Analytics</h2>
+                <h2>Profile Analytics</h2><br>
 
                 <div class="item onlion">
                     <div class="icon">
-                        <span class="material-symbols-sharp">shopping_cart</span>
+                        <span class="material-symbols-outlined">search</span>
                     </div>
                     <div class="right_text">
                         <div class="info">
-                            <h3>onlion orders</h3>
+                            <h3>Profile Search</h3>
                             <small class="text-muted">Last seen 2Hours</small>
                         </div>
-                        <h5 class="danger">-17%</h5>
-                        <h3>3000</h3>
+                        <h5 class="accept">+17%</h5>
+                        <h3>3560 search</h3>
                     </div>
                 </div>
                 <div class="item onlion">
                     <div class="icon">
-                        <span class="material-symbols-sharp">shopping_cart</span>
+                        <span class="material-symbols-outlined">star</span>
                     </div>
                     <div class="right_text">
                         <div class="info">
-                            <h3>onlion orders</h3>
-                            <small class="text-muted">Last seen 2Hours</small>
+                            <h3>Increase Rating</h3>
+                            <small class="text-muted">Last seen 24Hours</small>
                         </div>
-                        <h5 class="danger">-17%</h5>
-                        <h3>3000</h3>
+                        <h5 class="accept">+35%</h5>
+                        <h3>+2k rating</h3>
                     </div>
                 </div>
                 <div class="item onlion">
                     <div class="icon">
-                        <span class="material-symbols-sharp">shopping_cart</span>
+                        <span class="material-symbols-outlined">10k</span>
                     </div>
                     <div class="right_text">
                         <div class="info">
-                            <h3>onlion orders</h3>
-                            <small class="text-muted">Last seen 2Hours</small>
+                            <h3>Followers</h3>
+                            <small class="text-muted">Last seen 24Hours</small>
                         </div>
-                        <h5 class="danger">-17%</h5>
-                        <h3>3000</h3>
+                        <h5 class="accept">+65%</h5>
+                        <h3>+3k follower</h3>
                     </div>
                 </div>
             </div>
