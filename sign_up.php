@@ -11,10 +11,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phone = mysqli_real_escape_string($conn, $_POST['phone']);
     $location = mysqli_real_escape_string($conn, $_POST['location']);
 
+    if ($age < 20) {
+    header("Location: sign_up.php?error=You must be at least 20 years old to register.");
+    exit;
+}
+
     if ($password !== $confirm_password) {
         header("Location: sign_up.php?error=Passwords do not match!");
         exit;
     }
+    
 
     $check_email = "SELECT * FROM Client_c WHERE email = '$email'";
     $result = mysqli_query($conn, $check_email);
@@ -78,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input class="block2" type="text" name="last_name" placeholder="Your Surname" required>
 
                 <p>Enter your Age</p>
-                <input type="number" name="age" placeholder="Age" required>
+                <input type="number" name="age" placeholder="Age" min="20" required>
 
                 <p>Enter your Address</p>
                 <input type="text" name="address" placeholder="Address" required>
