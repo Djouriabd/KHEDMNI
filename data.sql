@@ -7,10 +7,9 @@ CREATE TABLE Client_c (
     phone VARCHAR(20),
     email VARCHAR(100),
     cv_file VARCHAR(255),
-    location VARCHAR(10)
+    location VARCHAR(10),
+    password VARCHAR(255)
 );
-
-
 
 
 
