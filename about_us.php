@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Untitled design.svg" type="image/png">
     <title>About Us</title>
 </head>
 <body>
     <header>
         <nav>
-            <img id="img" src="khedmni.svg" alt="logo">
+            <img id="img" src="KHEDMNI (2500 x 1500 px).svg" alt="logo">
             <ul>
                 <li class="blue"><a href="update.html">Home</a></li>
                 <li class="blue"><a href="jobs.html">Find Jobs</a></li>
@@ -26,14 +27,14 @@
             </ul>
             <ul class="auth-links">
                 <li class="hna" style="color:#FFF2F2;"><a href="log_in.html">Log in</a></li>
-                <li class="hna"><a href="signup.html">Sign up</a></li>
+                <li class="hna"><a href="sign_up.html">Sign up</a></li>
             </ul>
         </nav>
     </header>
             <section class="who-we-are">
                 <h1>Who We Are</h1>
                 <p>Khedmni is a platform that was created to help people find their dream job in the easiest way by creating an account and choosing which job they want to get hired for, from the location to the salary that they want.</p>
-                <img src="khedmni.svg" alt="logo khedmni" class="logo">
+                <img src="1.svg" alt="logo khedmni" class="logo">
             </section>
             <section class="our-mission">
                 <img src="Untitled design.png" alt="photo2">
