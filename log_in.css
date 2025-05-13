@@ -1,5 +1,5 @@
 body{
-    background-color:#FFF2F2;
+    background-color:#fcf6f6;
 }
 
 img{
@@ -13,6 +13,10 @@ img{
     object-fit: contain;
     top: 10.1px;
     left: 10.0px;
+    max-width: 10%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
 }
 
 header main h1{
