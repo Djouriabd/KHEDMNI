@@ -7,12 +7,13 @@
     <title>Home</title>
     <link rel="stylesheet" href="update.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="Untitled design.svg" type="image/png">
 </head>
 <body>
 
     <header>
         <nav>
-            <img id="img" src="khedmni.svg" alt="logo">
+            <img id="img" src="KHEDMNI (2500 x 1500 px).svg" alt="logo">
             <ul>
                 <li class="blue"><a href="update.html">Home</a></li>
                 <li class="blue"><a href="jobs.html">Find Jobs</a></li>
