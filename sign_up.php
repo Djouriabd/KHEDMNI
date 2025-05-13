@@ -59,6 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Sign up</title>
     <link rel="stylesheet" href="sign_up.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@100;400;700&family=Domine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Untitled design.svg" type="image/png">
 </head>
 <body>
     <div id="messageBox" class="hidden">
@@ -72,16 +73,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <header>
         <nav>
-            <img id="imgg" src="KHEDMNI/khedmni.svg" alt="logo khedmni">
+            <img id="img" src="KHEDMNI (2500 x 1500 px)2.svg" alt="logo">
         </nav>
         <main class="login">
             <h1>Create An Account</h1>
             <form class="f" action="about_us.html" method="POST" enctype="multipart/form-data">
                 <p>Enter your Name</p>
-                <input class="block1" type="text" name="first_name" placeholder="Your Name" required>
+                <input type="text" name="first_name" placeholder="Your Name" required>
 
                 <p id="right">Enter your Surname</p>
-                <input class="block2" type="text" name="last_name" placeholder="Your Surname" required>
+                <input type="text" name="last_name" placeholder="Your Surname" required>
 
                 <p>Enter your Age</p>
                 <input type="number" name="age" placeholder="Age" min="20" required>

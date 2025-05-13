@@ -2,7 +2,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     const messageBox = document.getElementById("messageBox");
 
-    if (!messageBox) return;
+    if (!messageBox){
+        return;
+    }
 
     if (params.has('error')) {
         messageBox.textContent = params.get('error');
