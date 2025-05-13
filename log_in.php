@@ -5,18 +5,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $sql = "SELECT * FROM client WHERE email='$username' OR first_name='$username'";
-    $result = $conn->query($sql);
+    $stmt = $conn->prepare("SELECT * FROM client_c WHERE email=? OR first_name=?");
+    $stmt->bind_param("ss", $username, $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
-        if ($user["password"] == $password) {
-            echo " Logged in successfully!";
+        if (password_verify($password, $user["password"])) {
+            echo "Logged in successfully!";
         } else {
-            echo " Wrong password.";
+            echo "Wrong password.";
         }
     } else {
-        echo " User not found.";
+        echo "User not found.";
     }
 }
 ?>
@@ -37,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <header>
         <nav>
-            <img src="KHEDMNI/khedmni.svg" alt="logo khedmni">
+            <img src="KHEDMNI (2500 x 1500 px).svg" alt="logo khedmni">
         </nav>
         <main class="login">
             <h1>Welcome Back</h1>
@@ -47,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <br><p>Enter your Your Password</p>
                 <br><input type="password" name="password" placeholder="Password" required><br>
                 <br><label for="fname" id="idk"><a href="password.html">forget your password?</a></label><br>
-                <button class="log_in" type="submit" id="btn">Log in</button>
+                <button class="log_in" type="submit" id="btn" action="log_in.php">Log in</button>
                 <p id="hna">You don't have an account yet? <a href="sign_up.html">sign up</a></p>
                 <!--<div id="uu">
                     <input type="checkbox" > remember me<br>
@@ -60,3 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </header>
 </body>
 </html>
+<!-- http://localhost/Khedmni/log_in.php -->
+
+
