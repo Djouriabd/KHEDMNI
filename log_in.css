@@ -3,7 +3,7 @@ body{
 }
 
 img{
-    width: 3%;
+    width: 6%;
     border-radius: 50%;
     margin-left: 15px;
     position: fixed;
@@ -13,10 +13,10 @@ img{
     object-fit: contain;
     top: 10.1px;
     left: 10.0px;
-    max-width: 10%;
-    height: auto;
-    display: block;
-    border-radius: 50%;
+}
+
+.login{
+    margin-top: 150px;
 }
 
 header main h1{

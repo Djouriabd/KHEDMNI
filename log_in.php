@@ -34,12 +34,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">   
+    <link rel="icon" href="Untitled design.svg" type="image/png">
     <title>Log in</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="KHEDMNI (2500 x 1500 px).svg" alt="logo khedmni">
+            <img id="img" src="KHEDMNI (2500 x 1500 px)2.svg" alt="logo">
         </nav>
         <main class="login">
             <h1>Welcome Back</h1>
